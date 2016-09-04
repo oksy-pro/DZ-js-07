@@ -2,7 +2,7 @@
 body {
   background-color: #311;
   color: #eee;
-  font-family: Arial,sans-serif;
+  font-family: Arial, sans-serif;
   font-size: 16px;
   margin: 0 30px 30px;
 }
@@ -46,10 +46,10 @@ fieldset {
 
 /* === tabs === */
 /* tabs colors */
-.tabs__nav a, .tabs__content-container {
+.tabs__nav a, .tabs__body {
   border-color: #555;
 }
-.tabs__nav a.selected, .tabs__content-container {
+.tabs__nav a.selected, .tabs__body {
   background-color: #333;
 }
 /* tabs layout */
@@ -60,10 +60,16 @@ fieldset {
   border-bottom-color: transparent;
   border-width: 1px;
   border-style: solid;
-  border-radius: 5px 5px 0 0;
+  /*border-radius: 5px 5px 0 0;*/
   margin-bottom: -1px;
 }
-.tabs__content-container {
+.tabs__nav a:first-child {
+  border-top-left-radius: 10px;
+}
+.tabs__nav a:last-child {
+  border-top-right-radius: 10px;
+}
+.tabs__body {
   border-radius: 0 10px 10px 10px;
   border-width: 1px;
   border-style: solid;
